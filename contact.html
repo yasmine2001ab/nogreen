@@ -34,6 +34,17 @@
                 </form>
             </div>
         </section>
+        <script>
+        // Fonction pour lire le texte de la page
+        function readText() {
+            const text = document.body.innerText; // Récupérer tout le texte de la page
+            const utterance = new SpeechSynthesisUtterance(text); // Créer une nouvelle instance de SpeechSynthesisUtterance
+            speechSynthesis.speak(utterance); // Lire le texte
+        }
+
+        // Ajouter l'événement de clic au bouton
+        document.getElementById('read-button').addEventListener('click', readText);
+    </script>
     </main>
     <footer>
         <p>&copy; 2024 Éco-conception | <a href="index.html">Accueil</a></p>
