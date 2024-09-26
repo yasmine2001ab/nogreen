@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Optimisé - Accueil</title>
+    <link rel="stylesheet" href="styles_non_optimize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            animation: fadeIn 2s ease-in;
+        }
+
+        .animated-title {
+            animation: slideIn 1s forwards;
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        @keyframes slideIn {
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animated-title">Bienvenue sur notre site non optimisé</h1>
+        <nav>
+            <ul>
+                <li><a href="index_non_optimize.html">Accueil</a></li>
+                <li><a href="contact_non_optimize.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Qu'est-ce que l'éco-conception ?</h2>
+            <p>L'éco-conception vise à réduire l'impact environnemental des produits et services tout en maintenant leur fonctionnalité.</p>
+            <div class="gallery-container">
+                <div class="image-frame">
+                    <img src="image.png" alt="Exemple d'image" loading="lazy">
+                </div>
+                <div class="image-frame">
+                    <img src="Afaq-ecoconception.jpg" alt="Image 1" loading="lazy">
+                </div>
+                <div class="image-frame">
+                    <img src="téléchargement.jpeg" alt="Image 2" loading="lazy">
+                </div>
+            </div>
+            <button class="animated-button">Cliquez ici pour en savoir plus!</button>
+        </section>
+        <section>
+            <h2>Nos Objectifs</h2>
+            <ul>
+                <li>Réduire l'empreinte carbone des produits numériques.</li>
+                <li>Promouvoir l'utilisation d'énergies renouvelables.</li>
+                <li>Augmenter la sensibilisation à la durabilité.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Non Optimisé | <a href="contact_non_optimize.html">Contact</a></p>
+    </footer>
+</body>
+</html>
