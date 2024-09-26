@@ -129,4 +129,22 @@ form button:hover {
   text-align: center; 
   margin-bottom: 20px; 
 }
+/* Styles pour le bouton */
+#read-button {
+  background-color: #4CAF50; /* Couleur de fond verte */
+  color: white; /* Couleur du texte en blanc */
+  border: none; /* Supprimer la bordure par défaut */
+  padding: 15px 20px; /* Ajouter de l'espace autour du texte */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Supprimer le soulignement */
+  display: inline-block; /* Afficher comme un bloc en ligne */
+  font-size: 16px; /* Taille de police */
+  margin: 10px 0; /* Ajouter un peu d'espacement vertical */
+  cursor: pointer; /* Changer le curseur au survol */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s; /* Effet de transition pour la couleur de fond */
+}
 
+#read-button:hover {
+  background-color: #45a049; /* Changer la couleur de fond au survol */
+}
